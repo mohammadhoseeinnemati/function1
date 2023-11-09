@@ -23,16 +23,16 @@ a = int (input("pliz enter your ferst namber: "))
 operation = input("what`s yuor operation: ")
 b = int (input("pliz enter your sec namber: "))
 
-def my_function(namber_1 , namber_2):
-    if operation == "*":
-        print(namber_1 * namber_2)
-    elif operation == "/":
-        print(namber_1 / namber_2)
-    elif operation == "+":
-        print(namber_1 + namber_2)
-    elif operation == "-":
-        print(namber_1 - namber_2)
-    else:
-        print("worig")
 
-    my_function(namber_1 , namber_2)
+def my_function(a, b) :
+	if operation == "*" :
+		print (a * b)
+	elif operation == "/" :
+		print (a / b)
+	elif operation == "+" :
+		print (a + b)
+	elif operation == "-" :
+		print (a - b)
+	else :
+		print ("") 
+my_function(a, b)
