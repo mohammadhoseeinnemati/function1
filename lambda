@@ -1,1 +1,35 @@
+#calculator
 
+print("wlcame to calculator")
+
+operation = {
+
+    "addition" : "+",
+    "susbtraction" : "-",
+    "multiplication " : "*",
+    "division": "/"
+
+}
+
+a = int (input("pliz enter your ferst namber: "))
+operation = input("what`s yuor operation: ")
+b = int (input("pliz enter your sec namber: "))
+
+if operation == "+":
+    Function =  lambda a: a + b
+    print(a + b)
+elif operation == "-":
+    def my_function(a):
+        return lambda b: b - a
+    mydoubler = my_function(a)
+    print(mydoubler(b))
+elif operation == "*":
+    def my_function (a):
+        return lambda b: b * a
+    mydoubler = my_function(a)
+    print(mydoubler(b))
+elif operation == "/":
+    function = lambda a: a / b
+    print(a / b)
+else:
+    ()
